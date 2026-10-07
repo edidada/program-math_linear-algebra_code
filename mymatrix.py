@@ -267,7 +267,7 @@ def self_test() -> None:
     source = matrix([[2, 3, 3], [3, 4, 2], [-2, -2, 3]])
     rhs = vector([9, 9, 2])
     solve(source, rhs)
-    assert all(_close(x, y) for x, y in zip(rhs.values, [-1, 2, 0]))
+    assert all(_close(x, y) for x, y in zip(rhs.values, [3, -1, 2]))
     inv = inverse(matrix([[2, 3], [1, 2]]))
     assert all(_close(x, y) for x, y in zip(inv.values[0] + inv.values[1], [2, -3, -1, 2]))
     print("all tests passed")
