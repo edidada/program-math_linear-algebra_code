@@ -1,0 +1,9 @@
+.idea
+*.iml
+target
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Testing/
+__pycache__/
